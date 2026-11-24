@@ -1,0 +1,45 @@
+﻿docker : time="2026-11-08T01:14:30+05:30" level=warning msg="D:\\C\\AIVOA_AI\\docker-compose.yml: the attribute 
+`version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+At line:4 char:19
++ cd D:\C\AIVOA_AI; docker compose build backend 2>&1 | Out-File -FileP ...
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (time="2026-11-0...tial confusion":String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Image aivoa_ai-backend Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 507B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 613B 0.0s done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.11-slim
+#3 DONE 1.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [1/7] FROM docker.io/library/python:3.11-slim@sha256:65bd3d9f1d7fa268dd1909973ba7eb4bdf41f6dcf2cfbe76ba9528b170f3fd79
+#6 resolve docker.io/library/python:3.11-slim@sha256:65bd3d9f1d7fa268dd1909973ba7eb4bdf41f6dcf2cfbe76ba9528b170f3fd79 0.1s done
+#6 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 4.58kB 0.0s done
+#5 DONE 0.0s
+
+#7 [2/7] WORKDIR /app
+#7 CACHED
+
+#8 [3/7] RUN apt-get update && apt-get install -y     gcc     postgresql-client     tesseract-ocr     libtesseract-dev     poppler-utils     && rm -rf /var/lib/apt/lists/*
+#8 CACHED
+
+#9 [4/7] COPY requirements.txt .
+#9 CACHED
+
+#10 [5/7] RUN pip install --no-cache-dir -r requirements.txt

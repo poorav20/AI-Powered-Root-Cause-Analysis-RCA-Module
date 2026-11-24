@@ -1,0 +1,35 @@
+[
+  {
+    "id": "customer_discoloration",
+    "text": "SSR Hospital reports that 12 Amoxicillin Capsules 500 mg appeared discolored. Batch number AMX240602. Manufacturing date: March 2026. Expiry date: February 2028.",
+    "expected": {
+      "product_name": "Amoxicillin Capsules 500 mg",
+      "batch_number": "AMX240602",
+      "reported_by": "SSR Hospital",
+      "affected_quantity": "12 Capsules",
+      "source_type": "healthcare provider",
+      "severity": "major"
+    }
+  },
+  {
+    "id": "assay_oos",
+    "text": "QC laboratory record: Metformin hydrochloride API, batch MFH260712A. Expected assay 98.0-102.0%. Actual assay 96.4%. Affected quantity: 2 HDP drums.",
+    "expected": {
+      "product_name": "Metformin hydrochloride API",
+      "batch_number": "MFH260712A",
+      "source_type": "laboratory record",
+      "affected_quantity": "2 HDP drums",
+      "severity": "major"
+    }
+  },
+  {
+    "id": "temperature_excursion",
+    "text": "Equipment log for Reactor R-101: temperature reached 86 C for 12 minutes. Approved range was 78-82 C. Batch API-2406-02 was quarantined.",
+    "expected": {
+      "batch_number": "API-2406-02",
+      "source_type": "equipment log",
+      "equipment_involved": "Reactor R-101",
+      "severity": "major"
+    }
+  }
+]
